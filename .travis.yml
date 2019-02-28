@@ -13,6 +13,7 @@ before_install:
   # Install Emacs (according to $EMACS_VERSION) and Cask
   - make -f emacs-travis.mk install_emacs
   - make -f emacs-travis.mk install_cask
+  - lein version
 
 install:
   - make elpa
